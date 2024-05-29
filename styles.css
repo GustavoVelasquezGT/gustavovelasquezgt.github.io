@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: "Radio Canada Big", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #796b6b;
+    text-align: justify;
+
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 1em 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+    background-color: #555;
+    border-radius: 5px;
+    padding: 5px ;
+   
+}
+
+nav ul li:hover > .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #343a40;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    padding: 10px;
+    display: block;
+    width: 150px;
+}
+
+.submenu li a:hover{
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#cart-icon {
+    display: flex;
+    align-items: center;
+}
+
+#cart-icon .fas {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+#cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+#marquee {
+    background-color: #333336;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+section {
+    background: rgb(100, 80, 80);
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+section h2, section h3 {
+    margin-top: 0;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.about-image img {
+    width: 75%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.client-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.client-content {
+    flex: 4;
+    margin-right: 20px;
+}
+
+.client-image {
+    flex: 1;
+}
+
+.client-image img {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.product img {
+    max-width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.about-content {
+    flex: 3;
+}
+
+.product, #cart {
+    text-align: center;
+}
+
+.product img {
+    max-width: 20%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.product:hover img {
+    transform: scale(1.1)
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5em 0;
+}
+
+#cart-items li button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#cart-items li button:hover {
+    background-color: darkred;
+}
+
+#checkout {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1em;
+    transition: background-color 0.3s;
+}
+
+#checkout:hover {
+    background-color: #218838;
+}
+
+#redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#redes-sociales li {
+    margin: 0 10px;
+}
+
+#redes-sociales a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+#redes-sociales a:hover {
+    color: #ffc107;
+}
+
+#redes-sociales a .fab {
+    margin-right: 8px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social li {
+    margin: 0 10px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ffc107;
+}
+
+.footer-social a .fab {
+    margin-right: 8px;
+}
+
+#play-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#play-button:hover {
+    background-color: #218838;
+}
+
